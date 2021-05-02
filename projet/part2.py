@@ -4,8 +4,9 @@ def degres_sommets(relation):
     deg_moins = [0] * n
     for i in range(n):
         for j in range(n):
-            deg_plus[i] += relation[i][j]
-            deg_moins[j] -= relation[i][j]
+            if (j != i):
+                deg_plus[i] += relation[i][j]
+                deg_moins[j] -= relation[i][j]
     deg = [sum(x) for x in zip(deg_plus, deg_moins)]
     deg_moins = list(map(lambda x: -x, deg_moins))
     return deg, deg_plus, deg_moins
@@ -16,7 +17,8 @@ def tri_tuples(relation):
     n = len(relation)
     liste_moins = []
     liste_plus = []
-    print("deg moins", degres_sommets(relation)[2], "\ndeg plus", degres_sommets(relation)[1])
+    for i in range(len(relation)) :
+        print("d("+str(i)+") = ",degres_sommets(relation)[1][i],"-",degres_sommets(relation)[2][i],"=",degres_sommets(relation)[0][i])
     # calcul du nombre de precedents pour chaque sommet
     # c'est le nombre de 0 sur la colonne de chaque élément
     deg_moins = list(map(lambda x: n - x, degres_sommets(relation)[2]))
@@ -28,10 +30,9 @@ def tri_tuples(relation):
         liste_moins.append((i, deg_moins[i]))
         liste_plus.append((i, deg_plus[i]))
     # on tri par nombre de suivants / précédents strictes
-    print('moins :', liste_moins, '\nplus :', liste_plus)
     liste_moins.sort(key = lambda tup: tup[1])
     liste_plus.sort(key = lambda tup: tup[1])
-    print('sort moins :', liste_moins, '\nsort plus :', liste_plus)
+
     return liste_moins, liste_plus
 
 
@@ -85,7 +86,6 @@ def representation_graphique(relation, liste_moins, liste_plus, epsilon):
             milieu = longueur/2 + debut[i]
             debut[i] = milieu - 0.4
             fin[i] = milieu + 0.4
-        print("long", i , fin[i] - debut[i])
 
     return debut, fin
 
@@ -93,4 +93,4 @@ def representation_graphique(relation, liste_moins, liste_plus, epsilon):
 def affichage_intervalles(debut, fin):
     ascii_a = ord('a')
     for i in range(len(debut)):
-        print(chr(ascii_a + i), ': [', debut[i], ', ', fin[i], ']', sep='')
+        print(chr(ascii_a + i), ': [', round(debut[i],1), ', ', fin[i], ']', sep='')

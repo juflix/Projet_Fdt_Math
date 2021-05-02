@@ -1,3 +1,8 @@
+import os
+
+#Rediriger le directory
+os.chdir('/Users/kellyalu/Downloads/Projet_Fdt_Math-master/projet')
+
 import copy
 from proprietes import *
 from part2 import *
@@ -17,6 +22,9 @@ def lecture_fichier(nom_fichier):
         for char in ligne:
             if char == '1' or char == '0':
                 relation[i].append(int(char))
+            elif char != '\n' and char != ' ':
+                print('La matrice n\'est pas de la forme attendue')
+                return(0)
             j += 1
         i += 1
     if [] in relation:
@@ -27,8 +35,7 @@ def lecture_fichier(nom_fichier):
     for i in range(n):
         if len(relation[i]) != n:
             print('La matrice n\'est pas de la forme attendue')
-            exit(1)
-
+            return(0)
     return relation
 
 
@@ -116,24 +123,28 @@ def test_optimisation(n):
 def main():
     nom_fichier = input("Entrez le nom du fichier (extension comprise) où se trouve la relation: ")
     relation = lecture_fichier(nom_fichier)
+    if relation == 0 :
+        return 0
 
     # PARTIE  1
     affiche_prop(relation)
-    
-    # on obligé de mettre '!= True' car la valeur retournées n'est pas toujours un bool
+
+    # on est obligé de mettre '!= True' car la valeur retournée n'est pas toujours un bool
     if ordre_total(relation) != True:
         s, d = transforme_ordre_total(relation)
         print("\n\nL'ordre total le plus proche de la relation donnée est : ")
         affiche_matrix(s)
         print("\nLa distance de Kemeney est de", d)
 
-
     # PARTIE 2
-    if(semi_ordre(relation) != True):
-        print("\n\nLa relation n'étant pas un semi-ordre, on n'affichera pas sa representation graphique")
-        return 0
-    print('\n\nLa représentation graphique est donnée par les intervalles:')
+    print("\n\nCalcul des degres des sommets:")
     liste_moins, liste_plus = tri_tuples(relation)
+
+    if(semi_ordre(relation) != True):
+        print("\n\nLa relation n'étant pas un semi-ordre, on n'affichera pas sa représentation numérique")
+        return 0
+
+    print('\n\nLa représentation numerique est donnée par les intervalles:')
     debut, fin = representation_graphique(relation, liste_moins, liste_plus, 0.1)
     affichage_intervalles(debut, fin)
 

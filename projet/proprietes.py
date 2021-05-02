@@ -135,8 +135,8 @@ def affiche_prop(relation):
     so = semi_ordre(relation)
     oi = ordre_intervalle(relation)
 
-    # on obligé de mettre '== True' car les valeurs retournées ne sont pas toujours des bool
-    print("Propriétés: ")
+    # on est obligé de mettre '== True' car les valeurs retournées ne sont pas toujours des bool
+    print("\nPropriétés: ")
     if ref == True:
         print("La relation est reflexive")
     else:
@@ -167,7 +167,7 @@ def affiche_prop(relation):
     if trans == True:
         print("La relation est transitive")
     else:
-        print("La relation n'est pas transitive: R(", trans[0], ', ', trans[1], ") = 1 et R(", trans[1], ', ', trans[0],
+        print("La relation n'est pas transitive: R(", trans[0], ', ', trans[1], ") = 1 et R(", trans[1], ', ', trans[2],
               ") = 1, pourtant R(", trans[0], ', ', trans[2], ") = 0 ", sep='')
 
     if semi_t == True:
