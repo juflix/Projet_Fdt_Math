@@ -52,7 +52,6 @@ def triangle_sup(permutation, n):
     # cree une matrice de taille n x n remplie de 1
     # on ne modifiera pas la diagonale pour conserver la réflexivité
     S = [[1 for col in range(n)] for row in range(n)]
-
     for i in range(n):
         for j in range(i + 1, n):
             # on met les permutations trouvées dans la partie triangulaire supérieure de la matrice
@@ -134,13 +133,10 @@ def main():
         print("\n\nLa relation n'étant pas un semi-ordre, on n'affichera pas sa representation graphique")
         return 0
     print('\n\nLa représentation graphique est donnée par les intervalles:')
-    liste_moins, liste_plus = tri_tuples(relation) # 2 car on veut les degres moins
-    debut, fin = representation_graphique(relation, liste_moins, liste_plus)
+    liste_moins, liste_plus = tri_tuples(relation)
+    debut, fin = representation_graphique(relation, liste_moins, liste_plus, 0.1)
     affichage_intervalles(debut, fin)
-    affiche_matrix(relation)
 
-    """for n in range(8):
-        print("n = ", n, "\ttemps : ", test_optimisation(n))"""
 
 
 main()
