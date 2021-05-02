@@ -93,4 +93,4 @@ def representation_graphique(relation, liste_moins, liste_plus, epsilon):
 def affichage_intervalles(debut, fin):
     ascii_a = ord('a')
     for i in range(len(debut)):
-        print(chr(ascii_a + i), ': [', round(debut[i],1), ', ', fin[i], ']', sep='')
+        print(chr(ascii_a + i), ': [', round(debut[i],1), ', ', round(fin[i], 1), ']', sep='')

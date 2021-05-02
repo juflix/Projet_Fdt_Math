@@ -1,8 +1,3 @@
-import os
-
-#Rediriger le directory
-os.chdir('/Users/kellyalu/Downloads/Projet_Fdt_Math-master/projet')
-
 import copy
 from proprietes import *
 from part2 import *

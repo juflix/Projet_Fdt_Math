@@ -182,15 +182,15 @@ def affiche_prop(relation):
         print("La relation est négativement transitive")
     else:
         print("La relation n'est pas négativement-transitive: R(", neg_t[0], ', ', neg_t[1], ") = 0  et R(", neg_t[1],
-              ', ', neg_t[2], ") = 0, pourtant R(", neg_t[1],
+              ', ', neg_t[2], ") = 0, pourtant R(", neg_t[0],
               ', ', neg_t[2], ") != 0", sep='')
 
     if fer == True:
         print("La relation est ferrer")
     else:
-        print("La relation n'est pas ferrer: R(", fer[0], ', ', fer[1], ") = 1  et R(", fer[1], ', ', fer[2],
+        print("La relation n'est pas ferrer: R(", fer[0], ', ', fer[1], ") = 1  et R(", fer[2], ', ', fer[3],
               ") = 1, pourtant R(",
-              fer[0], ', ', fer[2], ") == 0 ou R(", fer[2], ', ', fer[3], ") == 0", sep='')
+              fer[0], ', ', fer[3], ") == 0 ou R(", fer[2], ', ', fer[1], ") == 0", sep='')
 
     if comp == True:
         print("La relation est complète")
@@ -229,5 +229,3 @@ def affiche_prop(relation):
         print("La relation est un ordre d'intervalle")
     else:
         print("La relation n'est pas un ordre d'intervalle")
-
-    # transforme_ordre_total([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
