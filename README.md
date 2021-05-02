@@ -107,8 +107,8 @@ Nous avons choisi l'algorithme suivant:
       * sinon on prend le plus grand 'niveau plus' de ses précédents et on y enlève 1
 <br>
 Pour ne pas que les intervalles se chevauchent, on décale tout les début de - 0.1 et toutes les fins de + 0.1. <br>
+Avec cette algorithme, certains intervalles sont deux fois plus longs que les autres. Pour palier ce problème, nous avons raccourcis ces intervalles en gardant leur milieu au meme endroit pour le pas perdre les indifférences.
 
-L'algorithme fonctionne la plus part du temps mais présente des erreurs dans la gestion des indifférences.
 
 ## Résultats
 ### 1. Résultats partie 1
