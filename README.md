@@ -6,15 +6,13 @@ Partie 1
   2. Liste des propriétés satisfaites ou non par la relation
   3. Liste de structures de préférances vérifiées par la relation
   4. Ordre total le plus proche en distance de Kemeney
+  5. Résultats
+  6. Temps de calcul pour l'ordre total
 
 Partie 2
   1. Calcul des degrés
   2. Representation graphique
-
-Partie 3 : Resultats
-  1. Résultats partie 1
-  2. Temps de calcul pour l'ordre total
-  3. Résultats partie 2
+  3. Résultats
 
 <br><br>
 
@@ -82,6 +80,240 @@ Grace à cette bijection, on peut construire une matrice par permutation.
 
 <br>
 <br>
+
+### 5. Résultats
+
+#### 1. Premier fichier texte <br>
+Propriétés:
+  - La relation est reflexive
+  - La relation n'est pas symétrique: R(0, 1) != R(1, 0)
+  - La relation n'est pas asymétrique: R(0, 0) = 1
+  - La relation n'est pas antisymétrique: R(0, 3) = 1 et R(3, 0) = 1 
+  - La relation n'est pas transitive: R(0, 3) = 1 et R(3, 0) = 1, pourtant R(0, 2) = 0 
+  - La relation est semi-transitive
+  - La relation est négativement transitive
+  - La relation est ferrer
+  - La relation est complète
+
+Ordres :
+  - La relation n'est pas un ordre total
+  - La relation n'est pas un ordre partiel
+  - La relation n'est pas un préordre partiel
+  - La relation n'est pas un préordre total
+  - La relation est un semi-ordre
+  - La relation est un ordre d'intervalle
+
+L'ordre total le plus proche de la relation donnée est :
+[1, 1, 0, 0, 0]<br>
+[0, 1, 0, 0, 0]<br>
+[1, 1, 1, 0, 1]<br>
+[1, 1, 1, 1, 1]<br>
+[1, 1, 0, 0, 1]<br>
+
+La distance de Kemeney est de 4<br>
+
+<br>
+<br>
+
+#### 2. Deuxième fichier texte <br>
+Propriétés:
+  - La relation est reflexive 
+  - La relation n'est pas symétrique: R(0, 1) != R(1, 0) 
+  - La relation n'est pas asymétrique: R(0, 0) = 1 
+  - La relation n'est pas antisymétrique: R(1, 2) = 1 et R(2, 1) = 1  
+  - La relation est transitive 
+  - La relation est semi-transitive 
+  - La relation est négativement transitive 
+  - La relation est ferrer 
+  - La relation est complète 
+
+Ordres :
+  - La relation n'est pas un ordre total 
+  - La relation n'est pas un ordre partiel 
+  - La relation est un préordre partiel 
+  - La relation est un préordre total 
+  - La relation est un semi-ordre 
+  - La relation est un ordre d'intervalle 
+
+L'ordre total le plus proche de la relation donnée est : <br>
+[1, 1, 1, 1, 0, 0]<br>
+[0, 1, 0, 0, 0, 0]<br>
+[0, 1, 1, 0, 0, 0]<br>
+[0, 1, 1, 1, 0, 0]<br>
+[1, 1, 1, 1, 1, 0]<br>
+[1, 1, 1, 1, 1, 1]<br>
+
+La distance de Kemeney est de 4.
+
+<br>
+<br>
+
+#### 3. Troisième fichier texte <br>
+Propriétés:
+  - La relation est reflexive 
+  - La relation n'est pas symétrique: R(0, 1) != R(1, 0) 
+  - La relation n'est pas asymétrique: R(0, 0) = 1 
+  - La relation est antisymétrique 
+  - La relation n'est pas transitive: R(0, 1) = 1 et R(1, 0) = 1, pourtant R(0, 2) = 0  
+  - La relation n'est pas semi-transitive: R(0, 0) = 1  and R(0, 0) = 1, pourtant R(0, 2) != 1 et R(2, 0) != 1 
+  - La relation n'est pas négativement-transitive: R(0, 2) = 0  et R(2, 0) = 0, pourtant R(2, 0) != 0 
+  - La relation n'est pas ferrer: R(0, 0) = 1  et R(0, 1) = 1, pourtant R(0, 1) == 0 ou R(1, 2) == 0 
+  - La relation n'est pas complète: R(0, 2) = 0 et R(2, 0) = 0 
+
+Ordres :
+  - La relation n'est pas un ordre total 
+  - La relation n'est pas un ordre partiel 
+  - La relation n'est pas un préordre partiel 
+  - La relation n'est pas un préordre total 
+  - La relation n'est pas un semi-ordre 
+  - La relation n'est pas un ordre d'intervalle 
+
+L'ordre total le plus proche de la relation donnée est : <br>
+[1, 1, 1, 0, 0, 0]<br>
+[0, 1, 1, 0, 0, 0]<br>
+[0, 0, 1, 0, 0, 0]<br>
+[1, 1, 1, 1, 0, 0]<br>
+[1, 1, 1, 1, 1, 0]<br>
+[1, 1, 1, 1, 1, 1]<br>
+
+La distance de Kemeney est de 9.
+
+<br>
+<br>
+
+#### 4. Quatrième fichier texte <br>
+Propriétés:
+  - La relation est reflexive 
+  - La relation n'est pas symétrique: R(0, 1) != R(1, 0) 
+  - La relation n'est pas asymétrique: R(0, 0) = 1 
+  - La relation n'est pas antisymétrique: R(0, 2) = 1 et R(2, 0) = 1  
+  - La relation n'est pas transitive: R(2, 0) = 1 et R(0, 2) = 1, pourtant R(2, 3) = 0  
+  - La relation est semi-transitive 
+  - La relation est négativement transitive 
+  - La relation est ferrer 
+  - La relation est complète 
+
+Ordres :
+  - La relation n'est pas un ordre total 
+  - La relation n'est pas un ordre partiel 
+  - La relation n'est pas un préordre partiel 
+  - La relation n'est pas un préordre total 
+  - La relation est un semi-ordre 
+  - La relation est un ordre d'intervalle 
+
+L'ordre total le plus proche de la relation donnée est : <br>
+[1, 0, 0, 0, 0]<br>
+[1, 1, 1, 1, 0]<br>
+[1, 0, 1, 0, 0]<br>
+[1, 0, 1, 1, 0]<br>
+[1, 1, 1, 1, 1]<br>
+
+La distance de Kemeney est de 2.
+
+<br>
+<br>
+
+#### 5. Cinquième fichier texte <br>
+Propriétés:
+  - La relation est reflexive 
+  - La relation n'est pas symétrique: R(0, 1) != R(1, 0) 
+  - La relation n'est pas asymétrique: R(0, 0) = 1 
+  - La relation est antisymétrique 
+  - La relation est transitive 
+  - La relation est semi-transitive 
+  - La relation est négativement transitive 
+  - La relation est ferrer 
+  - La relation est complète 
+
+Ordres :
+  - La relation est un ordre total 
+  - La relation est un ordre partiel 
+  - La relation est un préordre partiel 
+  - La relation est un préordre total 
+  - La relation est un semi-ordre 
+  - La relation est un ordre d'intervalle
+
+La relation est déjà un ordre total, sa distance de Kemeney est donc de 0.
+
+<br>
+<br>
+
+#### 6. Sixième fichier texte <br>
+Propriétés:
+  - La relation est reflexive 
+  - La relation n'est pas symétrique: R(0, 1) != R(1, 0) 
+  - La relation n'est pas asymétrique: R(0, 0) = 1 
+  - La relation est antisymétrique 
+  - La relation n'est pas transitive: R(0, 1) = 1 et R(1, 0) = 1, pourtant R(0, 2) = 0  
+  - La relation n'est pas semi-transitive: R(0, 0) = 1  and R(0, 0) = 1, pourtant R(0, 3) != 1 et R(3, 0) != 1 
+  - La relation n'est pas négativement-transitive: R(0, 2) = 0  et R(2, 1) = 0, pourtant R(2, 1) != 0 
+  - La relation n'est pas ferrer: R(0, 0) = 1  et R(0, 1) = 1, pourtant R(0, 1) == 0 ou R(1, 2) == 0 
+  - La relation n'est pas complète: R(0, 3) = 0 et R(3, 0) = 0 
+
+Ordres :
+  - La relation n'est pas un ordre total 
+  - La relation n'est pas un ordre partiel 
+  - La relation n'est pas un préordre partiel 
+  - La relation n'est pas un préordre total 
+  - La relation n'est pas un semi-ordre 
+  - La relation n'est pas un ordre d'intervalle 
+
+L'ordre total le plus proche de la relation donnée est : <br>
+[1, 0, 0, 0, 0]<br>
+[1, 1, 1, 1, 0]<br>
+[1, 0, 1, 1, 0]<br>
+[1, 0, 0, 1, 0]<br>
+[1, 1, 1, 1, 1]<br>
+
+La distance de Kemeney est de 7.
+
+<br>
+<br>
+
+#### 7. Septième fichier texte <br>
+Propriétés:
+  - La relation est reflexive 
+  - La relation n'est pas symétrique: R(0, 3) != R(3, 0) 
+  - La relation n'est pas asymétrique: R(0, 0) = 1 
+  - La relation est antisymétrique 
+  - La relation est transitive 
+  - La relation n'est pas semi-transitive: R(0, 0) = 1  and R(0, 0) = 1, pourtant R(0, 1) != 1 et R(1, 0) != 1 
+  - La relation n'est pas négativement-transitive: R(0, 1) = 0  et R(1, 0) = 0, pourtant R(1, 0) != 0 
+  - La relation n'est pas ferrer: R(0, 0) = 1  et R(0, 1) = 1, pourtant R(0, 1) == 0 ou R(1, 1) == 0 
+  - La relation n'est pas complète: R(0, 1) = 0 et R(1, 0) = 0 
+
+Ordres :
+  - La relation n'est pas un ordre total 
+  - La relation est un ordre partiel 
+  - La relation est un préordre partiel 
+  - La relation n'est pas un préordre total 
+  - La relation n'est pas un semi-ordre 
+  - La relation n'est pas un ordre d'intervalle 
+
+L'ordre total le plus proche de la relation donnée est : <br>
+[1, 0, 0, 1, 1, 1]<br>
+[1, 1, 0, 1, 1, 1]<br>
+[1, 1, 1, 1, 1, 1]<br>
+[0, 0, 0, 1, 1, 0]<br>
+[0, 0, 0, 0, 1, 0]<br>
+[0, 0, 0, 1, 1, 1]<br>
+
+La distance de Kemeney est de 6.
+
+<br>
+<br>
+
+### 6. Temps de calcul pour l'ordre total
+On note n la taille d'une matrice qui n'est pas un semi-ordre et on donne le temps que prend notre programme à la transformer en semi-ordre: <br>
+Pour n = 2, le temps est de 0.0 secondes <br>
+Pour n = 3, le temps est de 0.0 secondes <br>
+Pour n = 4, le temps est de 0.001994609832763672 <br>
+Pour n = 5, le temps est de 0.04039931297302246 <br>
+Pour n = 6, le temps est de 1.5992064476013184 <br>
+Pour n = 7, le temps est de 134.24388194084167 <br>
+
+<br>
+<br>
 <br>
 <br>
 
@@ -110,20 +342,7 @@ Pour ne pas que les intervalles se chevauchent, on décale tout les début de - 
 Avec cet algorithme, certains intervalles sont deux fois plus longs que les autres. Pour palier ce problème, nous avons raccourcis ces intervalles en gardant leur milieu au même endroit (pour le pas perdre les indifférences).
 
 
-## Résultats
-### 1. Résultats partie 1
-
-
-### 2. Temps de calcul pour l'ordre total
-On note n la taille d'une matrice qui n'est pas un semi-ordre et on donne le temps que prend notre programme à la transformer en semi-ordre: <br>
-Pour n = 2, le temps est de 0.0 secondes <br>
-Pour n = 3, le temps est de 0.0 secondes <br>
-Pour n = 4, le temps est de 0.001994609832763672 <br>
-Pour n = 5, le temps est de 0.04039931297302246 <br>
-Pour n = 6, le temps est de 1.5992064476013184 <br>
-Pour n = 7, le temps est de 134.24388194084167 <br>
- <br>
-### 3. Résultats partie 2
+### 3. Résultats
 Tous les intervalles sont de longueur 0.8 <br>
 Pour la matrice 1. nous avons trouvé comme intervalles: <br>
 a: [2.1, 2.9] <br>
