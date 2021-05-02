@@ -115,14 +115,14 @@ L'algorithme fonctionne la plus part du temps mais présente des erreurs dans la
 
 
 ### 2. Temps de calcul pour l'ordre total
-On note n la taille d'une matrice qui n'est pas un semi-ordre et on donne le temps que prend notre programme à la transformer en semi-ordre:
-Pour n = 2, le temps est de 0.0 secondes
-Pour n = 3, le temps est de 0.0 secondes
-Pour n = 4, le temps est de 0.001994609832763672
-Pour n = 5, le temps est de 0.04039931297302246
-Pour n = 6, le temps est de 1.5992064476013184
-Pour n = 7, le temps est de 134.24388194084167
-
+On note n la taille d'une matrice qui n'est pas un semi-ordre et on donne le temps que prend notre programme à la transformer en semi-ordre: <br>
+Pour n = 2, le temps est de 0.0 secondes <br>
+Pour n = 3, le temps est de 0.0 secondes <br>
+Pour n = 4, le temps est de 0.001994609832763672 <br>
+Pour n = 5, le temps est de 0.04039931297302246 <br>
+Pour n = 6, le temps est de 1.5992064476013184 <br>
+Pour n = 7, le temps est de 134.24388194084167 <br>
+ <br>
 ### 3. Résultats partie 2
 Pour la matrice 1. nous avons trouvé comme intervalles: <br>
 a: [2.1, 2.9] <br>
