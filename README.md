@@ -124,6 +124,7 @@ Pour n = 6, le temps est de 1.5992064476013184 <br>
 Pour n = 7, le temps est de 134.24388194084167 <br>
  <br>
 ### 3. Résultats partie 2
+Tous les intervalles sont de longueur 0.8 <br>
 Pour la matrice 1. nous avons trouvé comme intervalles: <br>
 a: [2.1, 2.9] <br>
 b: [1.1, 1.9] <br>
@@ -131,8 +132,20 @@ c: [3.1, 3.9] <br>
 d: [3.1, 3.9] <br>
 e: [1.1, 1.9] <br>
 f: [0.1, 0.9] <br>
-Tous les intervalles sont de longueur 0.8
-<br>
+<br><br>
+Pour la matrice 2. nous avons trouvé comme intervalles: <br>
+a: [2.1, 2.9] <br>
+b: [1.0, 1.8] <br>
+c: [1.0, 0.9] <br>
+d: [1.6, 2.4] <br>
+e: [0.2, 1.0] <br>
+<br><br>
+Pour la matrice 2. nous avons trouvé comme intervalles: <br>
+a: [0.1, 0.9] <br>
+b: [1.6, 2.4] <br>
+c: [3.1, 3.9] <br>
+d: [2.1, 2.9] <br>
+e: [1.1, 1.9] <br>
 
 
 
