@@ -3,7 +3,7 @@
 def reflexive(relation):
     for x in range(len(relation)):
         if relation[x][x] != 1:
-            return x
+            return x, x
     return True
 
 
@@ -140,7 +140,7 @@ def affiche_prop(relation):
     if ref == True:
         print("La relation est reflexive")
     else:
-        print("La relation n'est pas reflexive: R(", ref, ", ", ref, ") = 0", sep='')
+        print("La relation n'est pas reflexive: R(", ref[0], ", ", ref[1], ") = 0", sep='')
 
     if sym == True:
         print("La relation est symétrique")
